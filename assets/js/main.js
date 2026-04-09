@@ -1,2 +1,62 @@
-// Mobile menu + contact form
-// See Task 3 for full implementation
+document.addEventListener('DOMContentLoaded', function () {
+
+  // ── MOBILE MENU TOGGLE ───────────────────────────────────────────────────
+  // Elements are injected by components.js which also runs on DOMContentLoaded.
+  // Use setTimeout(0) to ensure components.js has run first.
+  setTimeout(function () {
+    const toggle    = document.getElementById('menu-toggle');
+    const menu      = document.getElementById('mobile-menu');
+    const iconOpen  = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        const isHidden = menu.classList.contains('hidden');
+
+        menu.classList.toggle('hidden', !isHidden);
+        iconOpen.classList.toggle('hidden',  isHidden);
+        iconClose.classList.toggle('hidden', !isHidden);
+        toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+      });
+    }
+  }, 0);
+
+  // ── CONTACT FORM ─────────────────────────────────────────────────────────
+  const form     = document.getElementById('contact-form');
+  const thankYou = document.getElementById('thank-you');
+
+  if (form && thankYou) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      form.classList.add('hidden');
+      thankYou.classList.remove('hidden');
+    });
+  }
+
+  // ── SCHEDULE ACCORDION (mobile) ──────────────────────────────────────────
+  document.querySelectorAll('.day-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const targetId = btn.getAttribute('data-target');
+      const panel    = document.getElementById(targetId);
+      if (!panel) return;
+
+      const isOpen = !panel.classList.contains('hidden');
+
+      // Close all panels and reset all chevrons
+      document.querySelectorAll('.day-panel').forEach(function (p) {
+        p.classList.add('hidden');
+      });
+      document.querySelectorAll('.day-toggle svg').forEach(function (s) {
+        s.classList.remove('rotate-180');
+      });
+
+      // If clicked panel was closed, open it
+      if (!isOpen) {
+        panel.classList.remove('hidden');
+        const chevron = btn.querySelector('svg');
+        if (chevron) chevron.classList.add('rotate-180');
+      }
+    });
+  });
+
+});
