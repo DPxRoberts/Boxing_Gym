@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes | Underdog Boxing Gym</title>
+  <meta name="description" content="Boxing classes for all levels — beginner, cardio, sparring, junior, and private coaching.">
+  <link rel="icon" href="assets/images/logo.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-black text-white font-sans antialiased">
+  <div id="site-nav"></div>
+  <main class="page-content">
+
+    <!-- Page Hero -->
+    <section class="relative py-24 overflow-hidden"
+             style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url('https://picsum.photos/seed/classeshero/1600/600'); background-size: cover; background-position: center;">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-zinc-500 text-xs tracking-widest uppercase mb-3">What we offer</p>
+        <h1 class="text-5xl sm:text-6xl font-black uppercase tracking-tight">Our Classes</h1>
+        <p class="text-zinc-400 text-base mt-4 max-w-xl leading-relaxed">From first-timers to seasoned fighters, we have a class for every level and every goal.</p>
+      </div>
+    </section>
+
+    <!-- Class Grid (6 cards) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Beginner Boxing -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200 flex flex-col">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/class1/600/400" alt="Beginner Boxing" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold bg-zinc-800 px-2 py-1">All Levels</span>
+              <span class="text-xs text-zinc-600">60 min</span>
+            </div>
+            <h3 class="text-xl font-black uppercase tracking-tight mb-3">Beginner Boxing</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed flex-1">Start from zero. Learn proper stance, guard, footwork, and your first combinations in a supportive group environment. No experience or equipment required.</p>
+            <a href="#booking" class="mt-6 block text-center bg-white text-black font-black text-xs tracking-widest uppercase py-3 hover:bg-zinc-200 transition-colors">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Cardio Boxing -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200 flex flex-col">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/class2/600/400" alt="Cardio Boxing" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold bg-zinc-800 px-2 py-1">All Levels</span>
+              <span class="text-xs text-zinc-600">45 min</span>
+            </div>
+            <h3 class="text-xl font-black uppercase tracking-tight mb-3">Cardio Boxing</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed flex-1">High-intensity boxing-inspired fitness. Heavy bags, combos, and conditioning drills — zero sparring. A full-body burn in 45 minutes flat.</p>
+            <a href="#booking" class="mt-6 block text-center bg-white text-black font-black text-xs tracking-widest uppercase py-3 hover:bg-zinc-200 transition-colors">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Advanced Sparring -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200 flex flex-col">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/class3/600/400" alt="Advanced Sparring" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold bg-zinc-800 px-2 py-1">Intermediate+</span>
+              <span class="text-xs text-zinc-600">90 min</span>
+            </div>
+            <h3 class="text-xl font-black uppercase tracking-tight mb-3">Advanced Sparring</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed flex-1">Coach-supervised controlled sparring for members ready to apply their skills live. Mouthguard and headgear required. Invitation or coach approval needed.</p>
+            <a href="#booking" class="mt-6 block text-center bg-white text-black font-black text-xs tracking-widest uppercase py-3 hover:bg-zinc-200 transition-colors">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Junior Boxing -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200 flex flex-col">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/class4/600/400" alt="Junior Boxing" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold bg-zinc-800 px-2 py-1">Ages 8–16</span>
+              <span class="text-xs text-zinc-600">45 min</span>
+            </div>
+            <h3 class="text-xl font-black uppercase tracking-tight mb-3">Junior Boxing</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed flex-1">A safe, structured program designed for kids and teens. Builds discipline, confidence, fitness, and respect. Separate from adult classes.</p>
+            <a href="#booking" class="mt-6 block text-center bg-white text-black font-black text-xs tracking-widest uppercase py-3 hover:bg-zinc-200 transition-colors">Book Now</a>
+          </div>
+        </div>
+
+        <!-- One-on-One Coaching -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200 flex flex-col">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/class5/600/400" alt="One-on-One Coaching" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold bg-zinc-800 px-2 py-1">All Levels</span>
+              <span class="text-xs text-zinc-600">60 min</span>
+            </div>
+            <h3 class="text-xl font-black uppercase tracking-tight mb-3">One-on-One Coaching</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed flex-1">Private sessions with one of our head coaches. Personalised training plan, focused pad work, and direct feedback accelerate your progress like nothing else.</p>
+            <a href="#booking" class="mt-6 block text-center bg-white text-black font-black text-xs tracking-widest uppercase py-3 hover:bg-zinc-200 transition-colors">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Open Gym -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200 flex flex-col">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/class6/600/400" alt="Open Gym" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold bg-zinc-800 px-2 py-1">Members Only</span>
+              <span class="text-xs text-zinc-600">Flexible</span>
+            </div>
+            <h3 class="text-xl font-black uppercase tracking-tight mb-3">Open Gym</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed flex-1">Train on your own terms. Bags, skipping ropes, mitts, and the ring available during open gym hours. Active members only — check the schedule for times.</p>
+            <a href="pricing.html" class="mt-6 block text-center border border-zinc-600 text-zinc-400 font-black text-xs tracking-widest uppercase py-3 hover:border-white hover:text-white transition-colors">See Membership</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
