@@ -1,5 +1,9 @@
 .superpowers/
 .claude/
+.acloud/
+docs/
+tests/
+agent-teams-sop.md
 .DS_Store
 Thumbs.db
 Underdog_Boxing.jpg
