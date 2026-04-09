@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Underdog Boxing Gym</title>
+  <meta name="description" content="Boxing classes for all levels. Book your first class at Underdog Boxing Gym.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-black text-white font-sans antialiased">
+
+  <div id="site-nav"></div>
+
+  <main>
+
+    <!-- ── HERO ─────────────────────────────────────────────────────────── -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-texture"
+             style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.9) 100%), url('https://picsum.photos/seed/boxinghero/1600/900'); background-size: cover; background-position: center;">
+
+      <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
+        <img src="assets/images/logo.jpg" alt="Underdog Boxing Gym"
+             class="w-24 h-24 rounded-full object-cover border-2 border-zinc-600 mx-auto mb-8">
+
+        <p class="text-zinc-500 text-xs tracking-widest uppercase mb-4">Est. 2025 &middot; [Your City]</p>
+
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight leading-none mb-6">
+          Become the<br>
+          <span class="text-white">Underdog</span><br>
+          They Underestimated
+        </h1>
+
+        <p class="text-zinc-400 text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+          Boxing classes for all levels. No experience needed.<br>Just the will to show up.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#booking"
+             class="w-full sm:w-auto bg-white text-black font-black text-xs tracking-widest uppercase px-8 py-4 hover:bg-zinc-200 transition-colors duration-150">
+            Book a Free Class
+          </a>
+          <a href="about.html"
+             class="w-full sm:w-auto border border-zinc-600 text-zinc-400 font-semibold text-xs tracking-widest uppercase px-8 py-4 hover:border-white hover:text-white transition-colors duration-150">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-zinc-600 animate-bounce">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── VALUE PROPS BAR ───────────────────────────────────────────────── -->
+    <section class="bg-zinc-900 border-y border-zinc-800">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-zinc-800">
+        <div class="text-center py-8 px-6">
+          <p class="text-white font-black text-xl tracking-widest uppercase mb-1">All Levels</p>
+          <p class="text-zinc-500 text-xs tracking-wide uppercase">Beginner to advanced</p>
+        </div>
+        <div class="text-center py-8 px-6">
+          <p class="text-white font-black text-xl tracking-widest uppercase mb-1">Real Boxing</p>
+          <p class="text-zinc-500 text-xs tracking-wide uppercase">Technique-first training</p>
+        </div>
+        <div class="text-center py-8 px-6">
+          <p class="text-white font-black text-xl tracking-widest uppercase mb-1">Community</p>
+          <p class="text-zinc-500 text-xs tracking-wide uppercase">Train alongside others</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CLASSES PREVIEW ───────────────────────────────────────────────── -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <p class="text-zinc-500 text-xs tracking-widest uppercase mb-2">What we offer</p>
+      <h2 class="text-4xl font-black uppercase tracking-tight mb-12">Our Classes</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/beginner/600/400" alt="Beginner Boxing"
+                 class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6">
+            <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold">All Levels</span>
+            <h3 class="text-lg font-black uppercase tracking-tight mt-1 mb-3">Beginner Boxing</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Master the fundamentals — stance, footwork, jabs, and combinations. The perfect starting point.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/cardio/600/400" alt="Cardio Boxing"
+                 class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6">
+            <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold">All Levels</span>
+            <h3 class="text-lg font-black uppercase tracking-tight mt-1 mb-3">Cardio Boxing</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              High-energy fitness workout using boxing movements. No sparring — just sweat, rhythm, and results.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group bg-zinc-900 border border-zinc-800 overflow-hidden hover:border-zinc-600 transition-colors duration-200">
+          <div class="overflow-hidden">
+            <img src="https://picsum.photos/seed/sparring/600/400" alt="Advanced Sparring"
+                 class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="p-6">
+            <span class="text-xs text-zinc-500 tracking-widest uppercase font-semibold">Intermediate+</span>
+            <h3 class="text-lg font-black uppercase tracking-tight mt-1 mb-3">Advanced Sparring</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Controlled, coach-supervised sparring for members ready to test their skills in the ring.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="classes.html"
+           class="inline-block border border-zinc-600 text-zinc-400 text-xs font-semibold tracking-widest uppercase px-8 py-3 hover:border-white hover:text-white transition-colors duration-150">
+          View All Classes &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- ── CTA STRIP ─────────────────────────────────────────────────────── -->
+    <section id="booking" class="bg-zinc-900 border-y border-zinc-800 py-20">
+      <div class="max-w-2xl mx-auto text-center px-4">
+        <p class="text-zinc-500 text-xs tracking-widest uppercase mb-4">Ready to start?</p>
+        <h2 class="text-4xl sm:text-5xl font-black uppercase tracking-tight mb-6">
+          Ready to Step<br>in the Ring?
+        </h2>
+        <p class="text-zinc-400 text-base mb-10 leading-relaxed">
+          Your first class is on us. No gear required. Just show up.
+        </p>
+        <a href="#booking"
+           class="inline-block bg-white text-black font-black text-xs tracking-widest uppercase px-10 py-4 hover:bg-zinc-200 transition-colors duration-150">
+          Book a Free Class
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
