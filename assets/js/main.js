@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const iconOpen  = document.getElementById('icon-open');
     const iconClose = document.getElementById('icon-close');
 
-    if (toggle && menu) {
+    if (toggle && menu && iconOpen && iconClose) {
       toggle.addEventListener('click', function () {
         const isHidden = menu.classList.contains('hidden');
 
@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         iconOpen.classList.toggle('hidden',  isHidden);
         iconClose.classList.toggle('hidden', !isHidden);
         toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        menu.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
       });
     }
   }, 0);
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form && thankYou) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      form.reset();
       form.classList.add('hidden');
       thankYou.classList.remove('hidden');
     });
@@ -46,13 +48,15 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('.day-panel').forEach(function (p) {
         p.classList.add('hidden');
       });
-      document.querySelectorAll('.day-toggle svg').forEach(function (s) {
-        s.classList.remove('rotate-180');
+      document.querySelectorAll('.day-toggle').forEach(function (b) {
+        b.setAttribute('aria-expanded', 'false');
+        b.querySelector('svg').classList.remove('rotate-180');
       });
 
       // If clicked panel was closed, open it
       if (!isOpen) {
         panel.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
         const chevron = btn.querySelector('svg');
         if (chevron) chevron.classList.add('rotate-180');
       }
