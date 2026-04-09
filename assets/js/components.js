@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const navEl = document.getElementById('site-nav');
   if (navEl) {
     navEl.innerHTML = `
-<nav class="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800">
+<nav aria-label="Main" class="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
 
@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="hidden md:flex items-center gap-4 shrink-0">
         <!-- Facebook -->
         <a href="#" aria-label="Facebook" class="text-zinc-500 hover:text-white transition-colors">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
           </svg>
         </a>
         <!-- Instagram -->
         <a href="#" aria-label="Instagram" class="text-zinc-500 hover:text-white transition-colors">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
@@ -51,7 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
 
       <!-- Mobile: hamburger -->
+      <!-- NOTE: Toggle behaviour for #menu-toggle / #mobile-menu / #icon-open / #icon-close
+           is wired in assets/js/main.js — changes to these IDs must be reflected there. -->
       <button id="menu-toggle" aria-label="Toggle navigation menu"
+              aria-expanded="false" aria-controls="mobile-menu"
               class="md:hidden text-white p-2 -mr-2">
         <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
@@ -76,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
       <a href="contact.html"  class="block text-xs text-zinc-400 tracking-widest uppercase font-semibold hover:text-white py-2.5 border-b border-zinc-900">Contact</a>
       <div class="flex items-center gap-4 py-3">
         <a href="#" aria-label="Facebook" class="text-zinc-500 hover:text-white transition-colors">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
         <a href="#" aria-label="Instagram" class="text-zinc-500 hover:text-white transition-colors">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
@@ -87,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </a>
       </div>
       <a href="#booking"
-         class="block bg-white text-black text-xs font-black tracking-widest uppercase px-5 py-3 text-center">
+         class="block bg-white text-black text-xs font-black tracking-widest uppercase px-5 py-3 text-center hover:bg-zinc-200 transition-colors duration-150">
         Book a Class
       </a>
     </div>
@@ -114,10 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
         </p>
         <div class="flex items-center gap-4 mt-5">
           <a href="#" aria-label="Facebook" class="text-zinc-500 hover:text-white transition-colors">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
           </a>
           <a href="#" aria-label="Instagram" class="text-zinc-500 hover:text-white transition-colors">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
@@ -155,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
 
     <div class="border-t border-zinc-800 mt-10 pt-8 text-center text-zinc-600 text-xs tracking-widest">
-      &copy; 2025 Underdog Boxing Gym. All rights reserved.
+      &copy; ${new Date().getFullYear()} Underdog Boxing Gym. All rights reserved.
     </div>
   </div>
 </footer>`;
