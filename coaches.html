@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaches | Underdog Boxing Gym</title>
+  <meta name="description" content="Meet the coaching team at Underdog Boxing Gym — experienced trainers for all levels.">
+  <link rel="icon" href="assets/images/logo.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-black text-white font-sans antialiased">
+  <div id="site-nav"></div>
+  <main class="page-content">
+    <!-- PAGE HERO -->
+    <section class="relative py-24 overflow-hidden"
+             style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.97)), url('https://picsum.photos/seed/coacheshero/1600/600'); background-size: cover; background-position: center top;">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-zinc-500 text-xs tracking-widest uppercase mb-3">The team</p>
+        <h1 class="text-5xl sm:text-6xl font-black uppercase tracking-tight">Our Coaches</h1>
+        <p class="text-zinc-400 text-base mt-4 max-w-xl leading-relaxed">Every coach at Underdog is here because they love the sport and love teaching it. No egos. Just results.</p>
+      </div>
+    </section>
+
+    <!-- COACH CARDS (2x2 grid) -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+        <div class="bg-zinc-900 border border-zinc-800 overflow-hidden">
+          <img src="https://picsum.photos/seed/coach1/600/500" alt="Head Coach" class="w-full h-64 object-cover object-top grayscale">
+          <div class="p-6">
+            <p class="text-zinc-500 text-xs tracking-widest uppercase font-semibold mb-1">Head Coach</p>
+            <h3 class="text-2xl font-black uppercase tracking-tight mb-1">[Coach Name]</h3>
+            <p class="text-zinc-500 text-xs tracking-widest mb-4">Amateur Champion &middot; 15 years coaching</p>
+            <p class="text-zinc-400 text-sm leading-relaxed">[Coach Name] has been boxing since the age of twelve and coaching for over fifteen years. Known for an emphasis on fundamentals and footwork, they bring patience and precision to every session. Specialists in beginner development and fight preparation.</p>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 overflow-hidden">
+          <img src="https://picsum.photos/seed/coach2/600/500" alt="Strength and Conditioning Coach" class="w-full h-64 object-cover object-top grayscale">
+          <div class="p-6">
+            <p class="text-zinc-500 text-xs tracking-widest uppercase font-semibold mb-1">Strength &amp; Conditioning</p>
+            <h3 class="text-2xl font-black uppercase tracking-tight mb-1">[Coach Name]</h3>
+            <p class="text-zinc-500 text-xs tracking-widest mb-4">Certified S&amp;C Specialist &middot; 8 years coaching</p>
+            <p class="text-zinc-400 text-sm leading-relaxed">Bridging the gap between the gym floor and the ring, [Coach Name] designs conditioning programmes that build the endurance and power every boxer needs — whether you're fighting or just trying to survive three rounds on the bag.</p>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 overflow-hidden">
+          <img src="https://picsum.photos/seed/coach3/600/500" alt="Junior Programme Coach" class="w-full h-64 object-cover object-top grayscale">
+          <div class="p-6">
+            <p class="text-zinc-500 text-xs tracking-widest uppercase font-semibold mb-1">Junior Programme Coach</p>
+            <h3 class="text-2xl font-black uppercase tracking-tight mb-1">[Coach Name]</h3>
+            <p class="text-zinc-500 text-xs tracking-widest mb-4">Youth specialist &middot; DBS Checked</p>
+            <p class="text-zinc-400 text-sm leading-relaxed">[Coach Name] leads all junior classes with an approach built on discipline, fun, and confidence-building. A background in youth sport and a DBS-checked record make them the perfect guide for our youngest members.</p>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 overflow-hidden">
+          <img src="https://picsum.photos/seed/coach4/600/500" alt="Sparring and Advanced Coach" class="w-full h-64 object-cover object-top grayscale">
+          <div class="p-6">
+            <p class="text-zinc-500 text-xs tracking-widest uppercase font-semibold mb-1">Sparring &amp; Advanced Coach</p>
+            <h3 class="text-2xl font-black uppercase tracking-tight mb-1">[Coach Name]</h3>
+            <p class="text-zinc-500 text-xs tracking-widest mb-4">Pro record: 12–3 &middot; 10 years coaching</p>
+            <p class="text-zinc-400 text-sm leading-relaxed">With a professional boxing record and a decade of coaching experience, [Coach Name] runs our advanced sparring sessions with an iron-calm intensity. If you're ready to fight or want to think like a fighter, this is your coach.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-zinc-900 border-t border-zinc-800 py-16 text-center px-4">
+      <h2 class="text-3xl font-black uppercase tracking-tight mb-6">Train With Our Coaches</h2>
+      <a href="#booking" class="inline-block bg-white text-black font-black text-xs tracking-widest uppercase px-10 py-4 hover:bg-zinc-200 transition-colors">Book a Class</a>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
